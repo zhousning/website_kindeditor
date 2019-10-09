@@ -1,7 +1,7 @@
 .ke-container-editor {
   display: block;
   background-color: #FFF;
-  position:absolute;
+  /*position:absolute;*/
   top:0px;
   bottom:0px;
   width:100%;
@@ -24,7 +24,7 @@
 }
 .ke-container-editor .ke-edit-wrap {
   width:100%;
-  position:absolute;
+  /*position:absolute;*/
   background:#E6E6E6;
   top:59px;
   bottom:0px;
