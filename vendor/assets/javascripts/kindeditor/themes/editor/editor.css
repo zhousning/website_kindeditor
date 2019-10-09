@@ -1,0 +1,207 @@
+.ke-container-editor {
+  display: block;
+  background-color: #FFF;
+  position:absolute;
+  top:0px;
+  bottom:0px;
+  width:100%;
+}
+
+.ke-container-editor .ke-toolbar {
+  border-bottom: 1px solid #C6C6C6;
+  background-color:#fff;
+  padding: 5px 5px;
+  overflow: hidden;
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  z-index: 1000;
+}
+.ke-container-editor .ke-toolbar .ke-outline {
+  width:auto;
+  height:auto;
+}
+.ke-container-editor .ke-edit-wrap {
+  width:100%;
+  position:absolute;
+  background:#E6E6E6;
+  top:59px;
+  bottom:0px;
+  overflow-y:auto;
+}
+.ke-container-editor .ke-edit {
+  border:1px solid #C6C6C6;
+  background:white;
+  width:800px;
+  padding:100px 100px;
+  margin:25px auto 25px auto;
+}
+.ke-container-editor .ke-edit-iframe{
+	margin: 0;
+	padding: 0;
+  min-height:1110px;
+}
+.ke-container-editor .ke-statusbar{
+  display:none;
+}
+.ke-formula-input{
+  /*float:left;*/
+  width:90%;
+  height:auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ke-formula-input h4{
+  text-align:center
+}
+.ke-formula-textarea{
+  height:150px;
+  width:100%;
+  resize:none;
+  font-size:16px;
+}
+.ke-formula-output{
+  float:right;
+  width:60%;
+  height:auto;
+}
+.ke-formula-output h4{
+  text-align:center
+}
+.ke-formula-show{
+  height:140px;
+  width:auto;
+  line-height:100px;
+  text-align:center;
+  font-size:15px;
+}
+.ke-formula-line{
+  clear:both;
+  border-bottom: 2px solid #aaa;
+  padding-top: 15px;
+  margin-bottom: 15px;
+}
+.ke-formula-help{
+  clear:both;
+  width:auto;
+  height:auto;
+}
+.ke-formula-tutorial{
+	background: url(formula.gif) no-repeat center center;
+	width: auto;
+	height: 250px;
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
+}
+.kemd-serial-number{
+  color: red;
+  font-size: 16px;
+  font-weight: normal;
+}
+.img-flag-container{
+  width:280px;
+  position:absolute;
+  top:50px;
+  left:120px;
+  border-left:1px solid #EA3E24;
+}
+.img-flag-content{
+  background:#EA3E24;
+  padding:5px;
+  font-size:15px;
+  color:white;
+}
+.table-flag-container{
+  width:280px;
+  position:absolute;
+  top:-20px;
+  left:120px;
+  border-left:1px solid #EA3E24;
+}
+.table-flag-content{
+  background:#EA3E24;
+  padding:5px;
+  font-size:15px;
+  color:white;
+}
+.whitespace{
+  height:30px;
+}
+.editor-error{
+  border:1px solid #EA3E24;
+}
+.preview-page-header{
+  position: absolute;
+  top: 64px;
+  left: 0px;
+  right: 0px;
+  padding: 0px 100px;
+  text-align: center;
+}
+.preview-header-title{
+  color: #808080;
+}
+.preview-header-hr{
+  border-top: 1px solid #444;
+  margin: 0px;
+}
+.preview-area{
+  position: relative;
+}
+.preview-header-hr::after{
+  content: "";
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 5px;
+  background: #444;
+  top: 2px;
+}
+.tag-po{
+  position:absolute;
+  border: 1px solid #A8A8A8;
+  height:30px;
+  width:30px;
+}
+.tag-tl{
+  border-left: none;
+  border-top: none;
+  top:70px;
+  left:70px;
+}
+.tag-tr{
+  border-right: none;
+  border-top: none;
+  top:70px;
+  right:70px;
+}
+.tag-bl{
+  border-left: none;
+  border-bottom: none;
+  left:70px;
+  bottom:70px;
+}
+.tag-br{
+  border-right: none;
+  border-bottom: none;
+  right:70px;
+  bottom:70px;
+}
+/*mobile start*/
+@media screen and (max-width: 1024px){
+  .ke-icon-order_list, .sidebar-right-show, .kefu2-container, .ke-icon-assist_tool{
+    display: none;
+  }
+  .ke-container-editor .ke-edit, .edit_area{
+    float: right;
+    margin: 20px 29px 3px 0;
+  }
+  .reference-container{
+    margin-left: -334px;
+  }
+  .sidebar-left-container{
+  	width: 150px;
+  }
+}
+/*mobile end*/
