@@ -3747,16 +3747,16 @@ _extend(KEdit, KWidget, {
 			self.doc = doc;
       var body = self.doc.body;
 			var cmd = _cmd(doc);
-			self.afterChange(function(e) {
-        var range = cmd.range;
-        var childs = body.children;
-        if (childs.length ==0) {
-          body.innerHTML = '<div id="MathJax_Message" style="display: none;"></div><p><br /></p>';
-          range.selectNodeContents(body.lastChild);
-          cmd.select();
-        }
-				cmd.selection();
-			});
+			//self.afterChange(function(e) {
+      //  var range = cmd.range;
+      //  var childs = body.children;
+      //  if (childs.length ==0) {
+      //    body.innerHTML = '<div id="MathJax_Message" style="display: none;"></div><p><br /></p>';
+      //    range.selectNodeContents(body.lastChild);
+      //    cmd.select();
+      //  }
+			//	cmd.selection();
+			//});
 			if (_WEBKIT) {
 				K(doc).click(function(e) {
 					if (K(e.target).name === 'img') {
